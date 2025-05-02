@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 99vw;
+  min-height: 100vh;
+  display: flex;
+}
+
+.nav {
+  width: 7%;
+  background-color: rgb(250, 251, 252);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 1%;
+  position: fixed;
+}
+
+.body {
+  width: 93%;
+  height: 100%;
+  margin-left: 7%;
+}
+
+.dashboardlogo {
+  width: 30px;
+  height: 30px;
+}
+
+.showbutton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 20%;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.showbutton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.dashboardtoplogo {
+  width: 60%;
+  height: 100%;
+}
+
+.p {
+  font-size: 0.9rem;
+}
+
+.mainlogo {
+  width: 100%;
+  height: 10%;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+  height: 70%;
+  width: 100%;
+  gap: 15%;
+}
+
+.uppernav {
+  height: 70%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    width: 60%;
+  }
+
+  .body {
+    width: 40%;
+    margin-left: 60%;
+  }
+
+  .showbutton {
+    font-size: 1.8rem;
+  }
+
+  .mainlogo {
+    height: 15%;
+  }
+
+  .dashboardtoplogo {
+    width: 50%;
+  }
+}

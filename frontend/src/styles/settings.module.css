@@ -1,0 +1,117 @@
+/* adminSettings.module.css */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mainContainer {  /* Updated class name */
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    min-width: 92vw;
+    margin-left: 1vw;
+    padding-top: 2%;
+    font-family: 'roboto';
+  }
+  
+  .editProfileSection {  /* Updated class name */
+    padding: 2%;
+    background-color: #fafbfc;
+    border-radius: 10px;
+  }
+  
+  .dividerLine {  /* Updated class name */
+    border-bottom: 1px solid #5e5e5e;
+    width: 100%;
+  }
+  
+  .sectionTitle {  /* Updated class name */
+    color: #184e7f;
+    border-bottom: 3px solid #184e7f;
+    width: 8%;
+  }
+  
+  .formLabel {  /* Updated class name */
+    margin-left: 3%;
+    color: #5e5e5e;
+  }
+  
+  .formInput {  /* Updated class name */
+    margin-left: 3%;
+    width: 40%;
+    padding: 0.7%;
+    border: 1px solid #5e5e5e;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  .saveButton {  /* Updated class name */
+    background-color: #184e7f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5% 2%;
+    margin-left: 90%;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .saveButton:hover {
+    background-color: #123556;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .formInput {
+      width: 60%;
+    }
+    .saveButton {
+      margin-left: 80%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .formInput {
+      width: 80%;
+    }
+    .saveButton {
+      margin-left: 70%;
+    }
+    .mainContainer{
+      min-width: 95vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .formInput {
+      width: 90%;
+    }
+    .saveButton {
+      margin-left: 60%;
+    }
+    .sectionTitle{
+      width: 15%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .formInput {
+      width: 95%;
+      margin-left: 2%;
+    }
+    .formLabel{
+      margin-left: 2%;
+    }
+    .saveButton {
+      margin-left: 50%;
+      padding: 2% 5%;
+    }
+    .mainContainer{
+      min-width: 100vw;
+      margin-left: 0;
+    }
+    .sectionTitle{
+      width: 25%;
+    }
+  }
+  

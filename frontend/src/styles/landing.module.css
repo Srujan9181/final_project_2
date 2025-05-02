@@ -1,0 +1,244 @@
+/* home.module.css */
+.homeContainer {
+    width: 99vw;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .sectionOne {
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(250, 252, 255);
+  }
+  
+  .headerArea {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2%;
+  }
+  
+  .mainLogo {
+    /* width: 10%;  No explicit width, let the image's intrinsic size handle it, or set a max-width if needed */
+    height: auto;
+  }
+  
+  .mainContentArea {
+    margin-top: 3%;
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .mainContentLeft,
+  .mainContentRight {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  .mainContentLeft {
+    align-items: flex-start;
+  }
+  
+  .cardImage {
+    position: absolute;
+    top: 10%;
+    left: 65%;
+  }
+  
+  .graphImage {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    height: 15%;
+    width: 10%;
+  }
+  
+  .calendarImage {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    height: 30%;
+    width: 15%;
+  }
+  
+  .logoArea {
+    width: 100%;
+    background-color: rgb(235, 241, 250);
+    padding: 2rem;
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .videoPlayArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    flex-wrap: wrap;
+  }
+  
+  .videoText {
+    color: rgb(36, 71, 120);
+  }
+  
+  .videoLink {
+    text-decoration: none;
+  }
+  
+  .actionButtons {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+  
+  .chatIconButton {
+    background-color: rgb(51, 72, 92);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    color: white;
+    font-weight: 400;
+    height: 13%;
+    width: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .primaryButton {
+    background-color: rgb(36, 71, 120);
+    font-family: 'Roboto', sans-serif;
+    padding: 1%;
+    font-size: medium;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .chatbotSection {
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    width: 20%;
+    height: 55%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .chatIconImage {
+    height: 150%;
+    width: 150%;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .cardImage,
+    .graphImage,
+    .calendarImage {
+      position: static;
+      margin: 1rem 0;
+      width: 80%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mainContentArea {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .mainContentLeft,
+    .mainContentRight {
+      width: 100%;
+    }
+  
+    .chatIconButton {
+      width: 20%;
+      height: 10%;
+    }
+  
+    .primaryButton {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .homeContainer > *:not(.chatbotSection) {
+      display: none !important;
+    }
+  
+    .homeContainer {
+      visibility: visible !important;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: column;
+    }
+  
+    .chatbotSection {
+      width: 100vw;
+      height: 60vh;
+      display: flex !important;
+      position: relative;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 4%;
+      padding-right: 1%;
+      padding-bottom: 10vh;
+    }
+  
+    .chatIconButton {
+      background-color: rgb(51, 72, 92);
+      padding: 1rem;
+      border-radius: 50%;
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+      right: 2%;
+      color: white;
+      font-weight: 400;
+      height: 15%;
+      width: 19%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: x-large;
+    }
+  
+    .chatIconImage {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  

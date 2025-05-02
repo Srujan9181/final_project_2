@@ -1,0 +1,529 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .landingPage {
+    width: 99vw;
+    min-height: 100vh;
+    font-family: 'roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .headerArea {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  .authLinks {
+    display: flex;
+    gap: 5%;
+    width: 30%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .loginLink {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'roboto';
+    color: rgb(54, 54, 74);
+    font-size: medium;
+    text-decoration: none;
+  }
+  
+  .loginLink:hover {
+    text-decoration: underline;
+  }
+  
+  .signUpButton {
+    background-color: rgb(36, 71, 120);
+    font-family: 'roboto';
+    padding: 1%;
+    font-size: medium;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .signUpButton:hover {
+    background-color: rgb(29, 57, 95);
+  }
+  
+  .upperMainBody {
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Added for responsiveness */
+  }
+  
+  .upperMainLeft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    min-width: 300px; /* Added for small screens */
+  }
+  
+  .upperMainLeft h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .upperMainRight {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Added for responsiveness */
+  }
+  
+  .upperMainRight img {
+    margin: 10px; /* Added spacing between images */
+  }
+  
+  .startButton {
+    background-color: rgb(36, 71, 120);
+    font-family: 'roboto';
+    padding: 1%;
+    font-size: medium;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .startButton:hover {
+    background-color: rgb(29, 57, 95);
+  }
+  
+  .cardImage {
+    position: relative;
+    top: 2%;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .graphImage {
+    position: relative;
+    top: 17%;
+    right: 0;
+    height: auto;
+    width: 20%;
+    max-width: 100%;
+  }
+  
+  .calendarImage {
+    position: relative;
+    top: 15%;
+    left: 0;
+    height: auto;
+    width: 30%;
+    max-width: 100%;
+  }
+  
+  .logoArea {
+    width: 100%;
+    background-color: rgb(235, 241, 250);
+    padding: 2rem;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Added for responsiveness */
+  }
+  
+  .logoArea img {
+    margin: 10px; /* Added spacing between logos */
+    max-height: 50px; /* Limit logo height */
+  }
+  
+  
+  .secondHeader {
+    margin-top: 5%;
+    width: 80%;
+    text-align: center;
+    gap: 2%;
+  }
+  
+  .secondHeadH1 {
+    color: rgb(47, 63, 77);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .secondHeadP {
+    font-size: medium;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .rectangle1 {
+    padding: 3rem;
+    background-color: rgb(113, 166, 217);
+    clip-path: polygon(10% 0%, 90% 0%, 85% 100%, 16% 100%);
+    box-shadow: 0px 0px 10px 10px rgba(113, 166, 217, 0.5);
+    z-index: 1;
+    margin-bottom: -5%;
+  }
+  
+  .rectangle2 {
+    padding: 3rem;
+    clip-path: polygon(20% 0%, 80% 0%, 74% 100%, 26% 100%);
+    background-color: rgb(58, 121, 189);
+  }
+  
+  .rectangle3 {
+    padding: 3rem;
+    clip-path: polygon(30% 0%, 70% 0%, 65% 100%, 36% 100%);
+    background-color: rgb(48, 96, 140);
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.3));
+  }
+  
+  
+  .designSection {
+    width: 80%;
+    margin-top: 3%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5% auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1% 2%;
+    color: rgb(19, 49, 77);
+    flex-wrap: wrap;
+  }
+  
+  .designLeft {
+    width: 60%;
+    padding-top: 5%;
+    color: rgb(19, 49, 77);
+    min-width: 300px;
+  }
+  
+  .designLeft h2{
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .designRight {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mediaLogos {
+    width: 60%;
+    height: auto;
+    margin-left: 15%;
+    max-width: 100%;
+  }
+  
+  .arrow1 {
+    position: absolute;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 46%;
+    z-index: 2;
+    right: 28%;
+  }
+  
+  .circle11 {
+    height: 200%;
+    width: 12%;
+    border-radius: 50%;
+    background-color: rgb(24, 78, 128);
+  }
+  
+  .line {
+    border: 2px solid rgb(24, 78, 128);
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+  
+  .circle12 {
+    height: 70%;
+    width: 12%;
+    border-radius: 50%;
+    background-color: rgb(24, 78, 128);
+  }
+  
+  .arrow2 {
+    position: absolute;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 39%;
+    z-index: 2;
+    right: 35%;
+  }
+  
+  .arrow3 {
+    position: absolute;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 42.5%;
+    right: 32%;
+  }
+  
+  .captureHeading {
+    position: absolute;
+    left: 47%;
+    top: 38.9%;
+  }
+  
+  .nurtureHeading {
+    position: absolute;
+    left: 50%;
+    top: 42.4%;
+  }
+  
+  .closeHeading {
+    position: absolute;
+    left: 56%;
+    top: 45.8%;
+  }
+  
+  .thirdHeader {
+    text-align: center;
+    color: rgb(47, 63, 77);
+    margin-top: 2rem;
+  }
+  
+  .thirdHeader h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .planCards {
+    display: flex;
+    width: 80%;
+    padding: 1%;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .mainFooter {
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: #f0f0f0;
+  }
+  
+  .mainFooter > div {
+    width: 25%;
+    padding: 2%;
+    min-width: 200px;
+  }
+  
+  .mainContent {
+    width: 100%;
+    height: 100%;
+    font-family: 'roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(250, 252, 255);
+  }
+  
+  .productSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .primerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .videoPlayArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+  
+  .videoText {
+    color: rgb(36, 71, 120);
+    text-decoration: none;
+  }
+  
+  .videoLink {
+    text-decoration: none;
+  }
+  
+  .actionButtons {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    flex-wrap: wrap;
+  }
+  
+  .developerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .paragraph {
+    color: grey;
+  }
+  
+  .socialLinks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: large;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .upperMainBody {
+      flex-direction: column;
+    }
+    .upperMainLeft,
+    .upperMainRight {
+      width: 80%;
+      min-width: auto;
+    }
+    .designSection {
+      flex-direction: column;
+      align-items: center;
+    }
+    .designLeft,
+    .designRight {
+      width: 100%;
+      min-width: auto;
+    }
+    .secondHeadH1{
+      font-size: 1.75rem;
+    }
+    .mainFooter > div{
+      width: 45%;
+      margin-bottom: 20px;
+    }
+    .plans{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .authLinks {
+      width: 50%;
+    }
+    .headerArea {
+      flex-direction: column;
+      text-align: center;
+    }
+    .upperMainLeft h1{
+      font-size: 2rem;
+    }
+    .secondHeadP{
+      font-size: 0.9rem;
+    }
+    .captureHeading, .nurtureHeading, .closeHeading{
+      font-size: 1.2rem;
+    }
+    .mainFooter > div{
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .signUpButton,
+    .startButton {
+      width: 30%;
+    }
+    .actionButtons{
+      flex-direction: column;
+      align-items: center;
+    }
+    .actionButtons button, .actionButtons a{
+      width: 80%;
+    }
+    .mainFooter {
+      flex-direction: column;
+    }
+    .mainFooter > div {
+      width: 100%;
+    }
+    .secondHeadH1{
+      font-size: 1.5rem;
+    }
+    .designLeft h2{
+      font-size: 1.4rem;
+    }
+    .captureHeading, .nurtureHeading, .closeHeading{
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .authLinks {
+      width: 70%;
+    }
+    .signUpButton,
+    .startButton {
+      width: 50%;
+    }
+    .headerArea {
+      flex-direction: column;
+      text-align: center;
+    }
+    .upperMainLeft h1{
+      font-size: 1.75rem;
+    }
+    .secondHeadH1{
+      font-size: 1.2rem;
+    }
+    .designLeft h2{
+      font-size: 1.2rem;
+    }
+    .captureHeading, .nurtureHeading, .closeHeading{
+      font-size: 0.8rem;
+    }
+  }
+  

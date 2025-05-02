@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    margin-left: 1vw;
+    padding: 2% 4%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .circleGraph {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+  }
+  
+  .resolvedSection,
+  .responseInfo,
+  .totalChats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .textBlock {
+    flex: 1;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .sectionTitle {
+    font-weight: 500;
+  }
+  
+  .chartSection {
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .resolvedSection,
+    .responseInfo,
+    .totalChats {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .circleGraph {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .textBlock p {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 4% 2%;
+    }
+  
+    .textBlock h1,
+    .textBlock h2 {
+      font-size: 18px;
+    }
+  
+    .textBlock p {
+      font-size: 13px;
+    }
+  
+    .circleGraph {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  

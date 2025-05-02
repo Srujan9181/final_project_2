@@ -1,0 +1,245 @@
+
+
+.main {
+    width: 96%;
+    min-height: 98vh;
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .head {
+    font-size: 2em;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+  
+  .searchInput {
+    width: 30%;
+    min-width: 200px;
+    padding: 0.8em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 1.5em;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 2%;
+    margin-bottom: 1.5em;
+  }
+  
+  .filterButton {
+    background: none;
+    color: #777;
+    cursor: pointer;
+    border: none;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  }
+  
+  .filterButton:hover {
+    color: #2a6f9e;
+    border-bottom: 2px solid #2a6f9e;
+  }
+  
+  .clicked {
+    color: #2a6f9e;
+    border-bottom: 2px solid #2a6f9e;
+    font-weight: 500;
+  }
+  
+  .line {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+  
+  .chat {
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 1.2em;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .names {
+    padding: 0.5em;
+  }
+  
+  .ticketdetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8em;
+  }
+  
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .linediv { /* Changed from .linediv to .separatorLine */
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin: 0.8em 0;
+  }
+  
+  .userDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.8em;
+  }
+  
+  .details {
+    font-weight: 300;
+    color: #777;
+    font-size: 0.85em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding-left: 0.5em;
+  }
+  
+  .details > h2 {
+    font-weight: 400;
+    font-size: 1em;
+    color: #333;
+    margin: 0;
+  }
+  
+  .ticketid {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.3em;
+  }
+  
+  .time {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .date {
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 0.2em;
+  }
+  
+  .openlink {
+    text-decoration: underline;
+    color: #2a6f9e;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .openlink:hover {
+    color: #1e5277;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main {
+      padding: 2%;
+    }
+  
+    .head {
+      font-size: 1.75em;
+    }
+  
+    .searchInput {
+      width: 80%;
+      margin-bottom: 1em;
+    }
+  
+    .filters {
+      flex-direction: column;
+      gap: 0.8em;
+      width: 50%;
+    }
+  
+    .filterButton {
+      margin-left: 0;
+      padding: 0.6em 1em;
+      font-size: 0.9em;
+    }
+  
+    .ticketdetails {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5em;
+    }
+  
+    .time {
+      align-items: flex-start;
+    }
+  
+    .userDetails {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5em;
+    }
+  
+    .details {
+      gap: 0.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .head {
+      font-size: 1.5em;
+    }
+  
+    .searchInput {
+      width: 95%;
+    }
+  
+    .filters {
+      width: 70%;
+    }
+  
+    .filterButton {
+      font-size: 0.8em;
+    }
+  
+    .ticketid {
+      font-size: 1em;
+    }
+  
+    .date {
+      font-size: 0.75em;
+    }
+  
+    .time{
+      font-size: 0.8em;
+    }
+  
+    .details {
+      font-size: 0.8em;
+    }
+  
+    .details > h2 {
+      font-size: 0.9em;
+    }
+  
+    .openlink {
+      font-size: 0.85em;
+    }
+  }
+  

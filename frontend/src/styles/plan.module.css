@@ -1,0 +1,129 @@
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .planCard {
+    width: 40%;
+    min-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px grey;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .planTitle {
+    color: rgb(47, 63, 77);
+    font-size: 1.5rem;
+  }
+  
+  .planDescription {
+    font-size: smaller;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .priceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+  
+  .planPrice {
+    color: rgb(58, 121, 189);
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .priceContainer p{
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .featureItem {
+    display: flex;
+    gap: 3%;
+    margin: 2%;
+    align-items: center; /* Vertically align icon and text */
+  }
+  
+  .featureItem img {
+    width: 16px; /* Adjust size as needed */
+    height: 16px;
+  }
+  
+  .featureItem p{
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  .signUpButton {
+    width: 100%;
+    padding: 3%;
+    background: none;
+    border: 1px solid rgb(167, 181, 201);
+    color: rgb(36, 71, 120);
+    font-size: large;
+    border-radius: 15px;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .signUpButton:hover {
+    background-color:  rgba(36, 71, 120, 0.1);
+    border-color:  rgb(36, 71, 120);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .planCard {
+      width: 45%;
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .planCard {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .planCard {
+      width: 80%;
+    }
+    .planPrice{
+      font-size: 2rem;
+    }
+    .featureItem p{
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .planCard {
+      width: 95%;
+      padding: 3%;
+    }
+    .planTitle{
+      font-size: 1.2rem;
+    }
+    .planDescription{
+      font-size: 0.8rem;
+    }
+    .priceContainer p{
+      font-size: 1rem;
+    }
+    .signUpButton{
+      font-size: medium;
+      padding: 2.5%;
+    }
+  }
+  
